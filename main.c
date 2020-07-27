@@ -9,7 +9,7 @@ int main() {
     long c =34;
     long d = 30;
 
-    printf("data:\n "
+    printf("data:\n"
            "a= %d\n"
            "b= %d\n"
            "c= %ld\n"

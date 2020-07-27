@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Thoma\CLionProjects\APA_Basics
+CMAKE_SOURCE_DIR = C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/APA_Basics.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/APA_Basics.dir/flags.make
 
 CMakeFiles/APA_Basics.dir/main.c.obj: CMakeFiles/APA_Basics.dir/flags.make
 CMakeFiles/APA_Basics.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/APA_Basics.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\APA_Basics.dir\main.c.obj   -c C:\Users\Thoma\CLionProjects\APA_Basics\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/APA_Basics.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\APA_Basics.dir\main.c.obj   -c C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\main.c
 
 CMakeFiles/APA_Basics.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/APA_Basics.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Thoma\CLionProjects\APA_Basics\main.c > CMakeFiles\APA_Basics.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\main.c > CMakeFiles\APA_Basics.dir\main.c.i
 
 CMakeFiles/APA_Basics.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/APA_Basics.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\main.c -o CMakeFiles\APA_Basics.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\main.c -o CMakeFiles\APA_Basics.dir\main.c.s
 
 CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj: CMakeFiles/APA_Basics.dir/flags.make
 CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj: ../Library/APABasics_Library.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.obj   -c C:\Users\Thoma\CLionProjects\APA_Basics\Library\APABasics_Library.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.obj   -c C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Library\APABasics_Library.c
 
 CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Thoma\CLionProjects\APA_Basics\Library\APABasics_Library.c > CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Library\APABasics_Library.c > CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.i
 
 CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\Library\APABasics_Library.c -o CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Library\APABasics_Library.c -o CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.s
 
 # Object files for target APA_Basics
 APA_Basics_OBJECTS = \
@@ -96,7 +96,7 @@ APA_Basics.exe: CMakeFiles/APA_Basics.dir/build.make
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/linklibs.rsp
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/objects1.rsp
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable APA_Basics.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable APA_Basics.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\APA_Basics.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/APA_Basics.dir/clean:
 .PHONY : CMakeFiles/APA_Basics.dir/clean
 
 CMakeFiles/APA_Basics.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Thoma\CLionProjects\APA_Basics C:\Users\Thoma\CLionProjects\APA_Basics C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug C:\Users\Thoma\CLionProjects\APA_Basics\cmake-build-debug\CMakeFiles\APA_Basics.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug\CMakeFiles\APA_Basics.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/APA_Basics.dir/depend
 
