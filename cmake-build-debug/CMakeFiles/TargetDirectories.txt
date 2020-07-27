@@ -1,0 +1,3 @@
+C:/Users/Thoma/CLionProjects/APA_Basics/cmake-build-debug/CMakeFiles/APA_Basics.dir
+C:/Users/Thoma/CLionProjects/APA_Basics/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Thoma/CLionProjects/APA_Basics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
