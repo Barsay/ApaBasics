@@ -3,11 +3,14 @@
 
 //This function tests all the library's functions:
 
+void printmatrix(int **m, int i, int j);
+
 int main() {
     int a=100;
     int b= 770;
     long c =34;
     long d = 30;
+    int matrix2x2[2][2];
 
     printf("data:\n"
            "a= %d\n"
@@ -21,4 +24,8 @@ int main() {
     printf("mcd between a and b  is %d\n", mcd(a,b));
 
     return 0;
+}
+
+void printmatrix (int **m, int i, int j) {
+
 }
