@@ -7,7 +7,7 @@ main.c contains simple tests for every function.
 
 ## Algorithms featured in this library: 
 ### Recursive algorithms:
-### Mathematical:
+#### Mathematical:
 - factorial
 - fibonacci 
 - mcd
