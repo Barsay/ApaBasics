@@ -3,6 +3,10 @@
 
 CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj: ../Library/APABasics_Library.c
 
+CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj: ../OnLineConnectivity/OnLineConnectivity.c
+CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj: ../OnLineConnectivity/OnLineConnectivity.h
+
 CMakeFiles/APA_Basics.dir/main.c.obj: ../Library/APABasics_Library.h
+CMakeFiles/APA_Basics.dir/main.c.obj: ../OnLineConnectivity/OnLineConnectivity.h
 CMakeFiles/APA_Basics.dir/main.c.obj: ../main.c
 
