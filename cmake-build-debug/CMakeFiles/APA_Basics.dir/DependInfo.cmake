@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Library/APABasics_Library.c" "C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/cmake-build-debug/CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj"
+  "C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.c" "C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/cmake-build-debug/CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj"
   "C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/main.c" "C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/cmake-build-debug/CMakeFiles/APA_Basics.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

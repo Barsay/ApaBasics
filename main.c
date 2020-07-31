@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "Library/APABasics_Library.h"
-
+#include "OnLineConnectivity/OnLineConnectivity.h"
 //This function tests all the library's functions:
 
 void printmatrix(int **m, int i, int j);

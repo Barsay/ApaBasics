@@ -4,6 +4,7 @@
 
 #ifndef APA_BASICS_APABASICS_LIBRARY_H
 #define APA_BASICS_APABASICS_LIBRARY_H
+#define MAX 1000
 
 //SIMPLE FUNCTIONS:
 /** Simple function that calculates the determinant of a 2x2 matrix.

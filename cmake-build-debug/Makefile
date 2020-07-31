@@ -149,6 +149,33 @@ Library/APABasics_Library.c.s:
 	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.s
 .PHONY : Library/APABasics_Library.c.s
 
+OnLineConnectivity/OnLineConnectivity.obj: OnLineConnectivity/OnLineConnectivity.c.obj
+
+.PHONY : OnLineConnectivity/OnLineConnectivity.obj
+
+# target to build an object file
+OnLineConnectivity/OnLineConnectivity.c.obj:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj
+.PHONY : OnLineConnectivity/OnLineConnectivity.c.obj
+
+OnLineConnectivity/OnLineConnectivity.i: OnLineConnectivity/OnLineConnectivity.c.i
+
+.PHONY : OnLineConnectivity/OnLineConnectivity.i
+
+# target to preprocess a source file
+OnLineConnectivity/OnLineConnectivity.c.i:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.i
+.PHONY : OnLineConnectivity/OnLineConnectivity.c.i
+
+OnLineConnectivity/OnLineConnectivity.s: OnLineConnectivity/OnLineConnectivity.c.s
+
+.PHONY : OnLineConnectivity/OnLineConnectivity.s
+
+# target to generate assembly for a file
+OnLineConnectivity/OnLineConnectivity.c.s:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.s
+.PHONY : OnLineConnectivity/OnLineConnectivity.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... Library/APABasics_Library.obj
 	@echo ... Library/APABasics_Library.i
 	@echo ... Library/APABasics_Library.s
+	@echo ... OnLineConnectivity/OnLineConnectivity.obj
+	@echo ... OnLineConnectivity/OnLineConnectivity.i
+	@echo ... OnLineConnectivity/OnLineConnectivity.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
