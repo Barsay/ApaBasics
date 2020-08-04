@@ -74,16 +74,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Library/APABasics_Library.c">
-			<Option target="APA_Basics"/>
-		</Unit>
-		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Library/APABasics_Library.h">
-			<Option target="APA_Basics"/>
-		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.c">
 			<Option target="APA_Basics"/>
 		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.h">
+			<Option target="APA_Basics"/>
+		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c">
+			<Option target="APA_Basics"/>
+		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.h">
 			<Option target="APA_Basics"/>
 		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/main.c">

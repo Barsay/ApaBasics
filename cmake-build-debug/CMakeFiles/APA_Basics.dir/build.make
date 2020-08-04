@@ -69,18 +69,18 @@ CMakeFiles/APA_Basics.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/APA_Basics.dir/main.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\main.c -o CMakeFiles\APA_Basics.dir\main.c.s
 
-CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj: CMakeFiles/APA_Basics.dir/flags.make
-CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj: ../Library/APABasics_Library.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.obj   -c C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Library\APABasics_Library.c
+CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj: CMakeFiles/APA_Basics.dir/flags.make
+CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj: ../Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\APA_Basics.dir\Recursive_Basic_Algorithms\Recursive_Basic_Algorithms.c.obj   -c C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Recursive_Basic_Algorithms\Recursive_Basic_Algorithms.c
 
-CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Library\APABasics_Library.c > CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.i
+CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Recursive_Basic_Algorithms\Recursive_Basic_Algorithms.c > CMakeFiles\APA_Basics.dir\Recursive_Basic_Algorithms\Recursive_Basic_Algorithms.c.i
 
-CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Library\APABasics_Library.c -o CMakeFiles\APA_Basics.dir\Library\APABasics_Library.c.s
+CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Thoma\CLionProjects\APA_Basics\ApaBasics\Recursive_Basic_Algorithms\Recursive_Basic_Algorithms.c -o CMakeFiles\APA_Basics.dir\Recursive_Basic_Algorithms\Recursive_Basic_Algorithms.c.s
 
 CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj: CMakeFiles/APA_Basics.dir/flags.make
 CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj: ../OnLineConnectivity/OnLineConnectivity.c
@@ -98,14 +98,14 @@ CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.s: cmake_force
 # Object files for target APA_Basics
 APA_Basics_OBJECTS = \
 "CMakeFiles/APA_Basics.dir/main.c.obj" \
-"CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj" \
+"CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj" \
 "CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj"
 
 # External object files for target APA_Basics
 APA_Basics_EXTERNAL_OBJECTS =
 
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/main.c.obj
-APA_Basics.exe: CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj
+APA_Basics.exe: CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/build.make
 APA_Basics.exe: CMakeFiles/APA_Basics.dir/linklibs.rsp

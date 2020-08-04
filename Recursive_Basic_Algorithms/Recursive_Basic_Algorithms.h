@@ -2,8 +2,8 @@
 // Created by Thomas Galliano on 26/07/2020.
 //
 
-#ifndef APA_BASICS_APABASICS_LIBRARY_H
-#define APA_BASICS_APABASICS_LIBRARY_H
+#ifndef APA_BASICS_RECURSIVE_BASIC_ALGORITHMS_H
+#define APA_BASICS_RECURSIVE_BASIC_ALGORITHMS_H
 #define MAX 1000
 
 //SIMPLE FUNCTIONS:
@@ -63,4 +63,4 @@ int mcd(int x, int y);
 //int determinant(int n, int a[][n]); todo
 
 
-#endif //APA_BASICS_APABASICS_LIBRARY_H
+#endif //APA_BASICS_RECURSIVE_BASIC_ALGORITHMS_H

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Library/APABasics_Library.h"
+#include "Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.h"
 #include "OnLineConnectivity/OnLineConnectivity.h"
 //This function tests all the library's functions:
 
@@ -23,6 +23,7 @@ int main() {
     printf("dth fibonacci number is %ld\n", fib(d));
     printf("mcd between a and b  is %d\n", mcd(a,b));
 
+    quick_find(10);
     return 0;
 }
 

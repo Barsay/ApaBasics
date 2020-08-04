@@ -18,11 +18,13 @@ void quick_find(int n){
             printf("pair %d %d already connected\n",p, q);
         } else {
             for(t=id[p],i=0;i<n;i++){
-                if (id[p]==t)
-                    id[i]=id[q];
-                printf("pair not yet connected");
+                if (id[i]==t) {
+                    id[i] = id[q];
+                    printf("pair not yet connected");
+                }
+
             }
-            printf("input pair %d %d",p,q);
+            printf("input pair p q:");
         }
     }
 }

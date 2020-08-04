@@ -122,33 +122,6 @@ APA_Basics/fast:
 	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/build
 .PHONY : APA_Basics/fast
 
-Library/APABasics_Library.obj: Library/APABasics_Library.c.obj
-
-.PHONY : Library/APABasics_Library.obj
-
-# target to build an object file
-Library/APABasics_Library.c.obj:
-	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.obj
-.PHONY : Library/APABasics_Library.c.obj
-
-Library/APABasics_Library.i: Library/APABasics_Library.c.i
-
-.PHONY : Library/APABasics_Library.i
-
-# target to preprocess a source file
-Library/APABasics_Library.c.i:
-	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.i
-.PHONY : Library/APABasics_Library.c.i
-
-Library/APABasics_Library.s: Library/APABasics_Library.c.s
-
-.PHONY : Library/APABasics_Library.s
-
-# target to generate assembly for a file
-Library/APABasics_Library.c.s:
-	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Library/APABasics_Library.c.s
-.PHONY : Library/APABasics_Library.c.s
-
 OnLineConnectivity/OnLineConnectivity.obj: OnLineConnectivity/OnLineConnectivity.c.obj
 
 .PHONY : OnLineConnectivity/OnLineConnectivity.obj
@@ -175,6 +148,33 @@ OnLineConnectivity/OnLineConnectivity.s: OnLineConnectivity/OnLineConnectivity.c
 OnLineConnectivity/OnLineConnectivity.c.s:
 	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.s
 .PHONY : OnLineConnectivity/OnLineConnectivity.c.s
+
+Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.obj: Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
+
+.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.obj
+
+# target to build an object file
+Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
+.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
+
+Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.i: Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i
+
+.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.i
+
+# target to preprocess a source file
+Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i
+.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i
+
+Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.s: Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s
+
+.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.s
+
+# target to generate assembly for a file
+Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s
+.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s
 
 main.obj: main.c.obj
 
@@ -212,12 +212,12 @@ help:
 	@echo ... APA_Basics
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Library/APABasics_Library.obj
-	@echo ... Library/APABasics_Library.i
-	@echo ... Library/APABasics_Library.s
 	@echo ... OnLineConnectivity/OnLineConnectivity.obj
 	@echo ... OnLineConnectivity/OnLineConnectivity.i
 	@echo ... OnLineConnectivity/OnLineConnectivity.s
+	@echo ... Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.obj
+	@echo ... Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.i
+	@echo ... Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
