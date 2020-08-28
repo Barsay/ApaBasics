@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.h"
+#include "Basic_Algorithms/Basic_Algorithms.h"
 #include "OnLineConnectivity/OnLineConnectivity.h"
+
 //This function tests all the library's functions:
 
 void printmatrix(int **m, int i, int j);

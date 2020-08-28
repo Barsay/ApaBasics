@@ -122,6 +122,60 @@ APA_Basics/fast:
 	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/build
 .PHONY : APA_Basics/fast
 
+Basic_Algorithms/Basic_Algorithms.obj: Basic_Algorithms/Basic_Algorithms.c.obj
+
+.PHONY : Basic_Algorithms/Basic_Algorithms.obj
+
+# target to build an object file
+Basic_Algorithms/Basic_Algorithms.c.obj:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Basic_Algorithms/Basic_Algorithms.c.obj
+.PHONY : Basic_Algorithms/Basic_Algorithms.c.obj
+
+Basic_Algorithms/Basic_Algorithms.i: Basic_Algorithms/Basic_Algorithms.c.i
+
+.PHONY : Basic_Algorithms/Basic_Algorithms.i
+
+# target to preprocess a source file
+Basic_Algorithms/Basic_Algorithms.c.i:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Basic_Algorithms/Basic_Algorithms.c.i
+.PHONY : Basic_Algorithms/Basic_Algorithms.c.i
+
+Basic_Algorithms/Basic_Algorithms.s: Basic_Algorithms/Basic_Algorithms.c.s
+
+.PHONY : Basic_Algorithms/Basic_Algorithms.s
+
+# target to generate assembly for a file
+Basic_Algorithms/Basic_Algorithms.c.s:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Basic_Algorithms/Basic_Algorithms.c.s
+.PHONY : Basic_Algorithms/Basic_Algorithms.c.s
+
+Item/item.obj: Item/item.c.obj
+
+.PHONY : Item/item.obj
+
+# target to build an object file
+Item/item.c.obj:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Item/item.c.obj
+.PHONY : Item/item.c.obj
+
+Item/item.i: Item/item.c.i
+
+.PHONY : Item/item.i
+
+# target to preprocess a source file
+Item/item.c.i:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Item/item.c.i
+.PHONY : Item/item.c.i
+
+Item/item.s: Item/item.c.s
+
+.PHONY : Item/item.s
+
+# target to generate assembly for a file
+Item/item.c.s:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Item/item.c.s
+.PHONY : Item/item.c.s
+
 OnLineConnectivity/OnLineConnectivity.obj: OnLineConnectivity/OnLineConnectivity.c.obj
 
 .PHONY : OnLineConnectivity/OnLineConnectivity.obj
@@ -148,33 +202,6 @@ OnLineConnectivity/OnLineConnectivity.s: OnLineConnectivity/OnLineConnectivity.c
 OnLineConnectivity/OnLineConnectivity.c.s:
 	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.s
 .PHONY : OnLineConnectivity/OnLineConnectivity.c.s
-
-Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.obj: Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
-
-.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.obj
-
-# target to build an object file
-Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj:
-	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
-.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.obj
-
-Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.i: Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i
-
-.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.i
-
-# target to preprocess a source file
-Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i:
-	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i
-.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.i
-
-Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.s: Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s
-
-.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.s
-
-# target to generate assembly for a file
-Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s:
-	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s
-.PHONY : Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c.s
 
 main.obj: main.c.obj
 
@@ -212,12 +239,15 @@ help:
 	@echo ... APA_Basics
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Basic_Algorithms/Basic_Algorithms.obj
+	@echo ... Basic_Algorithms/Basic_Algorithms.i
+	@echo ... Basic_Algorithms/Basic_Algorithms.s
+	@echo ... Item/item.obj
+	@echo ... Item/item.i
+	@echo ... Item/item.s
 	@echo ... OnLineConnectivity/OnLineConnectivity.obj
 	@echo ... OnLineConnectivity/OnLineConnectivity.i
 	@echo ... OnLineConnectivity/OnLineConnectivity.s
-	@echo ... Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.obj
-	@echo ... Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.i
-	@echo ... Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

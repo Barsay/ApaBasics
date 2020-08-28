@@ -24,6 +24,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Item"/>
+					<Add directory="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity"/>
+					<Add directory="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Algorithms"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
@@ -42,6 +45,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Item"/>
+					<Add directory="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity"/>
+					<Add directory="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Algorithms"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
@@ -74,16 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.c">
+			<Option target="APA_Basics"/>
+		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.h">
+			<Option target="APA_Basics"/>
+		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Item/item.c">
+			<Option target="APA_Basics"/>
+		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Item/item.h">
+			<Option target="APA_Basics"/>
+		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.c">
 			<Option target="APA_Basics"/>
 		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.h">
 			<Option target="APA_Basics"/>
 		</Unit>
-		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.c">
-			<Option target="APA_Basics"/>
-		</Unit>
-		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Basic_Algorithms/Recursive_Basic_Algorithms.h">
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Algorithms/Cooley_Tuckey_Quick_Ftt.cpp">
 			<Option target="APA_Basics"/>
 		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/main.c">
