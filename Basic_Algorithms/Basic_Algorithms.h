@@ -123,7 +123,8 @@ void bubbleSort(int *A, int l, int r);
   * @param r Size of A
   */
  void MergeSortR(Item *A, Item *B,int l, int r);
-/**
+/** @relates MergeSort
+ * @relates CountingSort
  * Recursive Algorithm, used by MergeSort to merge two Item Arrays into one.
  * @param A
  * @param B
@@ -132,3 +133,107 @@ void bubbleSort(int *A, int l, int r);
  * @param r
  */
 void Merge(Item *A, Item *B, int l, int q, int r);
+
+/** @Description
+ * Research Algorithm, used to explore the space of a problem, when its elements are
+ * displaced as SIMPLE DISPOSITIONS.
+ * It is recursive.
+ * @formula <formula>
+ * Simple disposition: D(n,k) = (n!)/(n-k)!
+ * @example How many words can you form the word YOUMATH using 4 letters?
+ * [Note: every letter is different! No elements are repeated]
+ *      n= 7
+ *      k= 4
+ *      D(n,k)= (n!)/(n-k) = (7)!/(7-4)!
+ *
+ * @param pos input should be 0. The algorythm will then use it as a position f0r the *sol arrray,
+ * and use it as a termination condition (when sol>=k)
+ * @param val malloc(n*sizeof(int)); The array containing the values to be searched.
+ * @param sol malloc(k * sizeof(int)); dinamically refreshed arrau containing the solutions of the problem.
+ * @param mark calloc(n* sizeof(int)); marker array used to check if an element is already
+ * been put in a solution in a certain position.
+ * @param n size of the set
+ * @param k size of how much elements of the set will be taken
+ * @param count input should be 0. used to count the number of valid solutions
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int disp(int pos, int *val, int *sol, int *mark, int n, int k, int count);
+
+/**@Description
+ * Research Algorithm, used to explore the space of a problem, when its elements are
+ * displaced as REPEATED DISPOSITIONS.
+ * Recursive.
+ * Prints all the solutions, and returns the number of solutions.
+ * Note: similar to disp()
+ * @Formula
+ * Repeated disposition: D'(n,k) = D n^k
+ * @example how many 3-digits numbers can you form with the numbers 1,2,3,4,5,6?
+ * [Note: every digit is different, but in order to consider the right solution they can be
+ * repeated, ex. 111,222 etc]
+ * n=6 [counting 1,2,3,4,5,6]
+ * k=3 [Wanting to obtain a 3-digits number]
+ * D'(6,3)= 6^3= 216
+ * @param pos input should be 0. The algorithm will then use it as a position for the *sol array,
+ * and use it as a termination condition (when sol>=k)
+ * @param val malloc(n*sizeof(int)); The array containing the values to be searched.
+ * @param sol malloc(k * sizeof(int)); dinamically refreshed arrau containing the solutions of the problem.
+ * @param n  size of the set
+ * @param k size of how much elements of the set are used
+ * @param count input should be 0. used to count the number of valid solutions
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int disp_rip(int pos, int *val, int *sol, int n, int k, int count);
+/**
+ * @Description Research algorithm. Used to explore the space of a problem, when its elements
+ * are displaced as SIMPLE PERMUTATIONS
+ * Recursive.
+ * @Formula P(n)= D(n,n)= n!
+ * @example A family has 2 parents and 5 children. The children change their place at table every meal.
+ * How many meals will it take them to return to their first position?
+ * 7 places, 2 are fixed.
+ * P(5)=5!=120 meals.
+ *
+ * @param pos input is 0.
+ * @param val malloc(n*sizeof(int)); The array containing the values to be searched.
+ * @param sol malloc(n*sizeof(int)); dinamically refreshed arrau containing the K solutions of the problem.
+ * (sized k on disp, here sized n)
+ * @param mark calloc(n, sizeof(int)); marker array used to check if an element is already
+ * been put in a solution in a certain position.
+ * @param n size of the set
+ * @param count counter of the solutions
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int perm(int pos, int *val, int *sol, int *mark, int n, int count);
+/** @Description Research algorithm. Used to explore the space of a problem, when its elements
+ * are displaced as REPEATED PERMUTATIONS
+ * @Formula P[a,b...](n)=(n!)/(a!*b*!*...), a, b.... are the values that are repeated (a,b...)
+ * @example
+ * Given the word ORO, how much anagrams can you form?
+ * n=3, a=2 (Dist_Val= {0,R}) (note: in this algorithm a is called n_dist)
+ * @param pos input should be 0. The algorithm will then use it as a position for the *sol array,
+ * and use it as a termination condition (when sol>=k)
+ * P[2](3)= 3!/2! = 3
+ * @param dist_val malloc(n_dist*sizeof(int)); Array of distinct elements
+ * @param sol malloc(n*sizeof(int)):
+ * @param mark malloc(n_dist, sizeof(int)); Contains, for every element, how much they are present in
+ * the problem (ex: ORO = mark[0]=2 (2 O's), mark[1]=1 (1 R))
+ * @param n size of the set
+ * @param n_dist number of SINGLE elements (ex. word oro has dist_val=2 (O,R))
+ * @param count counter of the solutions
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int perm_r(int pos, int *dist_val, int *sol, int *mark, int n, int n_dist, int count);
+/** @Description Research algorithm. Used to explore the space of a problem, when its elements are displaced
+ * as SIMPLE COMBINATIONS
+ * @Formula C(n,k) = (D(n,k)/P(n,k) = (n!)/k!*(n-k)!weqweq
+ *
+ * @param pos
+ * @param val
+ * @param sol
+ * @param n
+ * @param k
+ * @param start
+ * @param count
+ * @return
+ */
+int comb(int pos, int *val, int *sol, int n, int k, int start, int count);

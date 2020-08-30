@@ -177,6 +177,79 @@ void Merge(Item *A, Item *B, int l, int q, int r){
 
 }
 
+int disp(int pos, int *val, int *sol, int *mark, int n, int k, int count){
+    int i;
+    if(pos>=k){ //termination condition
+        for(i=0;i<k;i++)
+            printf("%d", sol[i]);
+        printf("\n");
+        return count+1;
+    }
+    //iteration on all the selections
+    for(i=0;i<n;i++){
+        if(mark[i]==0){ // mark[i]!=0 : this has already been controlled
+            mark[i]=1; // mark this solution
+            sol[pos]=val[i];
+            count = disp (pos+1, val, sol, mark, n,k, count);
+            mark[i]=0; //unmark
+        }
+    }
+    return count;
+}
 
+int disp_rip(int pos, int *val, int *sol, int n, int k, int count){
+    int i;
+    if (pos>=k){ //termination condition
+        for(i=0;i<k;i++)
+            printf ("%d", sol[i]);
+        printf("\n");
+        return count+1;
+    }
 
+    for (i=0;i<n; i++){
+        sol[pos]=val[i];
+        count =disp_rip(pos+1,val,sol,n,k,count);
+    }
+    return count;
+}
 
+int perm(int pos, int *val, int *sol, int *mark, int n, int count){
+    int i;
+    if(pos >=n){ //termination
+        for(i=0;i<n;i++)
+            printf("%d", sol[i]);
+        printf("\n");
+        return count+1;
+    }
+    for (i=0;i<n;i++) //iteration on all the chosing
+        if(mark[i]==0){ // mark[i]!=0 -> the solution has already been taken, no repetition
+            mark[i]=1;
+            sol[pos] = val[i];
+            count = perm(pos+1,val,sol,mark,n,count);
+            mark[i]=0;
+        }
+    return count;
+}
+int perm_r(int pos, int *dist_val, int *sol, int *mark, int n, int n_dist, int count){
+    int i;
+    if (pos >=n){ //Termination
+        for (i=0;i<n;i++)
+            printf("%d", sol[i]);
+        printf("\n");
+        count++;
+    }
+    //For every cycle we check a different position of sol[].
+    for(i=0;i<n_dist;i++){
+        if(mark[i]>0){
+            mark[i]--;
+            sol[pos]=dist_val[i];
+            count=perm_r(pos+1, dist_val,sol,mark,n,n_dist, count);
+            mark[i]++; //BACKTRACK
+        }
+    }
+    return count;
+}
+
+int comb(int pos, int *val, int *sol, int n, int k, int start, int count){
+
+}
