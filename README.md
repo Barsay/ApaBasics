@@ -6,12 +6,26 @@ For now it's a work in progress.
 main.c contains simple tests for every function.
 
 ## Algorithms featured in this library: 
-### Recursive algorithms:
-#### Mathematical:
+### Basic Algorithms
+#### Simple recursive algorithms
+
 - factorial
 - fibonacci 
 - mcd
 - Determinant [todo]
+
+#### Iterative Sorting algorithms
+- BubbleSort
+- selectionSort
+- shellSort
+- counting Sort
+#### Recursive Sorting algorithms
+- MergeSort
+#### Esploration of Sets
+- Simple disposition
+- Repeated disposition
+- Permutation
+- Repeated permutation
 
 ### OnLine Connectivity:
 - Quick-find
