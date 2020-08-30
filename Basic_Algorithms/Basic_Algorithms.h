@@ -6,7 +6,7 @@
 #define APA_BASICS_BASIC_ALGORITHMS_H
 #define MAX 1000
 #include "item.h"
-//SIMPLE FUNCTIONS:
+
 /** Simple function that calculates the determinant of a 2x2 matrix.
  * Used as the terminal case for "determinant" function.
  *
@@ -22,7 +22,6 @@ int det2x2(int m[2][2]);
 // int minore(int **m,int i, int j, int n, int **m2); todo
 
 
-//RECURSIVE FUNCTIONS
 /**
  * Type: Mathematical
  * Model: None
@@ -73,8 +72,6 @@ int mcd(int x, int y);
  * @param r Max index of A (A must be A[r])
  */
 void bubbleSort(int *A, int l, int r);
-
-#endif //APA_BASICS_BASIC_ALGORITHMS_H
 
 /**
  * Iterates through the Array, saving the index of the least number, and swaps it with the first least non-ordered
@@ -237,3 +234,6 @@ int perm_r(int pos, int *dist_val, int *sol, int *mark, int n, int n_dist, int c
  * @return
  */
 int comb(int pos, int *val, int *sol, int n, int k, int start, int count);
+
+
+#endif //APA_BASICS_BASIC_ALGORITHMS_H

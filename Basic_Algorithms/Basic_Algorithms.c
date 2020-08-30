@@ -251,5 +251,5 @@ int perm_r(int pos, int *dist_val, int *sol, int *mark, int n, int n_dist, int c
 }
 
 int comb(int pos, int *val, int *sol, int n, int k, int start, int count){
-
+return 0;
 }
