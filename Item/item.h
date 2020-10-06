@@ -4,7 +4,6 @@
 
 #ifndef APA_BASICS_ITEM_H
 #define APA_BASICS_ITEM_H
-
 #define maxKey 100
 typedef int Item;
 
@@ -15,5 +14,4 @@ int ITEMlt(Item A, Item B);
 int ITEMgt(Item A, Item B);
 void ITEMshow(Item A);
 Item ITEMrand();
-
 #endif //APA_BASICS_ITEM_H

@@ -163,7 +163,7 @@ int disp(int pos, int *val, int *sol, int *mark, int n, int k, int count);
  * Prints all the solutions, and returns the number of solutions.
  * Note: similar to disp()
  * @Formula
- * Repeated disposition: D'(n,k) = D n^k
+ * Repeated disposition: D'(n,k) = n^k
  * @example how many 3-digits numbers can you form with the numbers 1,2,3,4,5,6?
  * [Note: every digit is different, but in order to consider the right solution they can be
  * repeated, ex. 111,222 etc]
@@ -188,7 +188,7 @@ int disp_rip(int pos, int *val, int *sol, int n, int k, int count);
  * @example A family has 2 parents and 5 children. The children change their place at table every meal.
  * How many meals will it take them to return to their first position?
  * 7 places, 2 are fixed.
- * P(5)=5!=120 meals.
+ * D(5)=5!=120 meals.
  *
  * @param pos input is 0.
  * @param val malloc(n*sizeof(int)); The array containing the values to be searched.
@@ -222,18 +222,131 @@ int perm(int pos, int *val, int *sol, int *mark, int n, int count);
 int perm_r(int pos, int *dist_val, int *sol, int *mark, int n, int n_dist, int count);
 /** @Description Research algorithm. Used to explore the space of a problem, when its elements are displaced
  * as SIMPLE COMBINATIONS
- * @Formula C(n,k) = (D(n,k)/P(n,k) = (n!)/k!*(n-k)!weqweq
+ * @Formula C(n,k) = (D(n,k)/P(n,k) = (n!)/k!*(n-k)!
+ * @Example: playing 3 numbers at the lottery (having 90 numbers in total), how many triplets can you
+ * make? n= 90, k= 3
+ * C(90,3) = (90!)/(90-3)! = 117480
  *
- * @param pos
- * @param val
- * @param sol
- * @param n
- * @param k
- * @param start
- * @param count
- * @return
+ * @param pos input should be 0. The algorithm will then use it as a position for the *sol array,
+ * and use it as a termination condition (when sol>=k)
+ * @param val malloc(n*sizeof(int)); Array containing the n elements. Note: every element can be displaced
+ * only one time (marker not needed)
+ * @param sol malloc(k*sizeof(int));
+ * @param n size of the set
+ * @param k size of how much elements of the set are used
+ * @param start initially 0
+ * @param count initially 0,
+ * @return Prints all the solutions, and returns how much they are.
  */
 int comb(int pos, int *val, int *sol, int n, int k, int start, int count);
 
+/**@Description Research algorithm. Used to explore the space of a problem, when its elements are displaced
+ * as SIMPLE COMBINATIONS. Recursive.
+ * @Formula: C'(n,k)= ((n+k-1)!)/(k!*(n-1)!)
+ * @example Two dices are launched, how many combinations of their faces are possible?
+ * C'(6,2)= 21
+ * @param pos input should be 0. The algorithm will then use it as a position for the *sol array,
+ * and use it as a termination condition (when sol>=k)
+ * @param val malloc(n*sizeof(int)); Array containing the n elements.
+ * @param sol malloc(k*sizeof(int)); Array used for the solution. Composed of K elements
+ * @param n size of the set
+ * @param k how many n-elements are combined
+ * @param start initially 0
+ * @param count initially 0
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int comb_r(int pos, int *val, int *sol, int n, int k, int start, int count);
+/**
+ * Description: Research algorithm, used to explore the space of a problem, where   its elements are displaced
+ * as A POWERSET. This is version uses the Divide et Impera paradigm.
+ * Example: for val = {1,2,3} its powerset is: {null},{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}.
+ *
+ * @param pos input should be 0. The algorithm will then use it as a position for the *sol array,
+ * and use it as a termination condition (when sol>=k)
+ * @param val malloc(n*sizeof(int)); Array containing the n elements.
+ * @param sol  Array used for the solution.
+ * @param k  size of the set
+ * @param start initially 0. Used to exclude symmetrical solutions (ex. {1,2}and {2,1})
+ * @param count
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int powerset_DeI (int pos, int *val, int *sol, int k, int start, int count);
+/**
+ * Description: Research algorithm, used to explore the space of a problem, where   its elements are displaced
+ * as A POWERSET. This is version uses Simple Dispositions.
+ * Example: for val = {1,2,3} its powerset is: {null},{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}.
+ *
+ * @param pos input 0. used as marker: sol[pos]=0 if the element is not contained in the solution, else
+ * sol[pos]=1
+ * @param val malloc(n*sizeof(int)); Array containing the n elements.
+ * @param sol  malloc(n*sizeof(int));  Array used for the solution.
+ * @param k  size of the set
+ * @param count
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int powerset_Disp(int pos, int *val, int *sol, int k, int count);
 
+/**
+ * hen the problem searched needs to have minimum cardinaliy, this solution is the best.
+ * @param val
+ * @param k
+ * @param sol
+ * @param n
+ * @param pos
+ * @param start
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int powerset_comb(int *val, int k, int *sol, int n, int pos, int start);
+/**
+ * Description: Function used as wrapper for powerset_comb(). Generates the null solution,
+ * and calls powerset_comb() in order to calculate the rest of the powerset.
+
+ * @relates powerset_comb()
+ * @param val
+ * @param k
+ * @param sol
+ * @return
+ */
+int powerset_wrapper(int *val, int k, int *sol);
+/**
+ * @Description  Research algorithm, used to explore the space of a problem, where its elements are a
+ * partition of a set. This algorithm is used to find one of all the possible partitions.
+ * @param pos
+ * @param val malloc(n=sizeof(int))
+ * @param sol malloc(n*sizeof(int))
+ * @param n size of the solution
+ * @param k number of choices (Different from the other algorithms!)
+ */
+void part_disp_ripet(int pos, int *val, int *sol, int n, int k);
+/**
+ * @Description Research algorithm, used to explore the space of a problem, where its elements are a
+ * partition of a set. This algorithm is used to find all of the possible partitions.
+ *
+ * @param n size of the solution
+ * @param m number of blocks
+ * @param pos
+ * @param sol  malloc(n*sizeof(int))
+ * @param val  malloc(n*sizeof(int))
+ */
+void Er(int n, int m, int pos, int *sol, int *val);
+/**
+ * @Description Struct used for molt_princ function.
+ */
+typedef struct {
+    int *choices;
+    int numberOfChoices;
+}Level;
+/**
+ * Research algorithm, used to explore the space of a problem, where every choice has a different number
+ * of possible sub-choices.
+ *
+ *
+ * @param pos initially o
+ * @param val malloc(n*sizeof(Level)); for (i=0;i<n;i++)val[i].numberOfChoices = malloc(val[i].numberofchoices*sizeof(int));
+ * @param sol malloc(n*sizeof(int));
+ * @param n number of levels
+ * @param count initially 0, used internally as a counter
+ * @return Prints all the solutions, and returns how much they are.
+ */
+int molt_princ(int pos, Level *val, int *sol, int n, int count);
 #endif //APA_BASICS_BASIC_ALGORITHMS_H

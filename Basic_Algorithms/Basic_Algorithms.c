@@ -251,5 +251,149 @@ int perm_r(int pos, int *dist_val, int *sol, int *mark, int n, int n_dist, int c
 }
 
 int comb(int pos, int *val, int *sol, int n, int k, int start, int count){
-return 0;
+    int i, j;
+    if(pos>=k) {
+        for (i = 0; i < k; i++)
+            printf("%d ", sol[i]);
+        printf("\n");
+        return count+1;
+    }
+    for (i=start;i<n;i++){
+        sol[pos]=val[i];
+        count = comb(pos+1, val, sol, n, k, i+1,count);
+    }
+    return count;
+}
+
+int comb_r(int pos, int *val, int*sol, int n, int k, int start, int count){
+    int i;
+    if(pos>=k){
+     for(i=0;i<k;i++)
+        printf("%d", sol[i]);
+    printf("\n");
+    return count+1;
+}
+    for(i=start; i<n;i++){
+        sol[pos]= val[i];
+        count = comb_r(pos+1,val,sol,n,k,start,count);
+        start++;//Increase start
+    }
+    return count;
+}
+int powerset_DeI (int pos, int *val, int *sol, int k, int start, int count){
+    int i;
+    if(start >=k){
+        for (i=0;i<pos;i++)
+            printf("%d", sol[i]);
+        printf("\n");
+        return count+1;
+    }
+    for (i=start; i<k; i++){
+        sol[pos]= val[i];
+        //Ad an element and calculate its powerset
+        count = powerset_DeI(pos+1,val,sol,k,i+1,count);
+    }
+    count= powerset_DeI(pos,val,sol,k,k,count);
+    return count;
+}
+
+int powerset_Disp(int pos, int *val, int *sol, int k, int count){
+    int j;
+    if (pos>=k){
+        printf("{ \t");
+        for(j=0;j<k;j++)
+            if(sol[j]!=0)
+                printf("%d\t", val[j]);
+        printf("} \n");
+        return count+1;
+    }
+    sol[pos] = 0;
+    count=powerset_Disp(pos+1,val,sol,k, count);
+    sol[pos]= 1; //Backtrack: take pos element =1
+    count =powerset_Disp(pos+1,val,sol,k,count);
+    return count;
+}
+
+int powerset_comb(int *val, int k, int *sol, int pos, int n, int start){
+    int count =0, i;
+    if (pos==n){
+        printf("{ ");
+        for (i=0;i<n;i++)
+            printf("%d", sol[i]);
+        printf(" }\n");
+        return 1;
+    }
+    for (i=start; i<k;i++){
+        sol[pos] = val[i];
+        count += powerset_comb(val, k,sol, n, pos+1,i+1);
+    }
+    return count;
+}
+int powerset_wrapper(int *val, int k, int *sol){
+    int count =0, n;
+    printf("{ }\n");//void set
+    count++;
+    for (n=1;n<=k;n++){
+        count +=powerset_comb(val, k, sol, n, 0, 0);
+    }
+    return count;
+}
+
+void part_disp_ripet(int pos, int *val, int *sol, int n, int k){
+    int i, j,t,ok=1,*occ;
+    if(pos >=n){
+        occ = calloc(n,sizeof(int));
+        for(j=0;j<n;j++)
+            occ[sol[j]]++;
+        i=0;
+        while(i<k&&ok){
+            if(occ[i]==0) ok=0;
+            i++;
+        }
+        free(occ);
+        if(ok==0) return;
+        else {
+            for (t=0;t<k;t++)
+                printf("%d", sol[t]);
+        }
+    }
+    for (i=0;i<k;i++){
+        sol[pos] =i;
+        part_disp_ripet(pos+1, val, sol,n,k);
+    }
+}
+
+void Er(int n, int m, int pos, int *sol, int *val){
+    int i,j;
+    if(pos>=n){
+        printf("partitioning on %d blocks", m);
+        for(i=0;i<m;i++)
+            for(j=0;j<n;j++)
+                if(sol[j]==i)
+                    printf("%d ", val[j]);
+        printf("\n");
+        return;
+    }
+    for(i=0;i<m;i++) {
+        sol[pos] = i;
+        Er(n,m,pos+1,sol,val);
+    }
+    sol[pos] = m;
+    Er(n, m+1, pos+1,sol,val);
+}
+
+int molt_princ(int pos, Level *val, int *sol, int n, int count){
+    int i;
+
+    if (pos>=n){
+        for (i=0;i<n;i++)
+            printf("%d", sol[i]);
+        printf("\n");
+        return count+1;
+    }
+    for(i=0;i<val[pos].numberOfChoices;i++){
+        sol[pos]=val[pos].choices[i];
+        count = molt_princ(pos+1,val,sol,n,count);
+    }
+    return count;
 }
