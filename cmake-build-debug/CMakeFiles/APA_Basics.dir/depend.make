@@ -11,8 +11,12 @@ CMakeFiles/APA_Basics.dir/Item/item.c.obj: ../Item/item.h
 CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj: ../OnLineConnectivity/OnLineConnectivity.c
 CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj: ../OnLineConnectivity/OnLineConnectivity.h
 
+CMakeFiles/APA_Basics.dir/SignalProcessing/spectral.c.obj: ../SignalProcessing/spectral.c
+CMakeFiles/APA_Basics.dir/SignalProcessing/spectral.c.obj: ../SignalProcessing/spectral.h
+
 CMakeFiles/APA_Basics.dir/main.c.obj: ../Item/item.h
 CMakeFiles/APA_Basics.dir/main.c.obj: ../Basic_Algorithms/Basic_Algorithms.h
 CMakeFiles/APA_Basics.dir/main.c.obj: ../OnLineConnectivity/OnLineConnectivity.h
+CMakeFiles/APA_Basics.dir/main.c.obj: ../SignalProcessing/spectral.h
 CMakeFiles/APA_Basics.dir/main.c.obj: ../main.c
 

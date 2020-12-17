@@ -10,4 +10,4 @@ include_directories(Recursive_Algorithms)
 add_executable(APA_Basics main.c
         Basic_Algorithms/Basic_Algorithms.c Basic_Algorithms/Basic_Algorithms.h
         OnLineConnectivity/OnLineConnectivity.c OnLineConnectivity/OnLineConnectivity.h
-        Recursive_Algorithms/Cooley_Tuckey_Quick_Ftt.cpp Item/item.c Item/item.h)
+        Recursive_Algorithms/Cooley_Tuckey_Quick_Ftt.cpp Item/item.c Item/item.h SignalProcessing/spectral.c SignalProcessing/spectral.h)

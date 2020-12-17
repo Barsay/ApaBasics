@@ -203,6 +203,33 @@ OnLineConnectivity/OnLineConnectivity.c.s:
 	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.s
 .PHONY : OnLineConnectivity/OnLineConnectivity.c.s
 
+SignalProcessing/spectral.obj: SignalProcessing/spectral.c.obj
+
+.PHONY : SignalProcessing/spectral.obj
+
+# target to build an object file
+SignalProcessing/spectral.c.obj:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/SignalProcessing/spectral.c.obj
+.PHONY : SignalProcessing/spectral.c.obj
+
+SignalProcessing/spectral.i: SignalProcessing/spectral.c.i
+
+.PHONY : SignalProcessing/spectral.i
+
+# target to preprocess a source file
+SignalProcessing/spectral.c.i:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/SignalProcessing/spectral.c.i
+.PHONY : SignalProcessing/spectral.c.i
+
+SignalProcessing/spectral.s: SignalProcessing/spectral.c.s
+
+.PHONY : SignalProcessing/spectral.s
+
+# target to generate assembly for a file
+SignalProcessing/spectral.c.s:
+	$(MAKE) -f CMakeFiles\APA_Basics.dir\build.make CMakeFiles/APA_Basics.dir/SignalProcessing/spectral.c.s
+.PHONY : SignalProcessing/spectral.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... OnLineConnectivity/OnLineConnectivity.obj
 	@echo ... OnLineConnectivity/OnLineConnectivity.i
 	@echo ... OnLineConnectivity/OnLineConnectivity.s
+	@echo ... SignalProcessing/spectral.obj
+	@echo ... SignalProcessing/spectral.i
+	@echo ... SignalProcessing/spectral.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

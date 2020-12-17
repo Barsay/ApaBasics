@@ -101,6 +101,12 @@
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Recursive_Algorithms/Cooley_Tuckey_Quick_Ftt.cpp">
 			<Option target="APA_Basics"/>
 		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.c">
+			<Option target="APA_Basics"/>
+		</Unit>
+		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.h">
+			<Option target="APA_Basics"/>
+		</Unit>
 		<Unit filename="C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/main.c">
 			<Option target="APA_Basics"/>
 		</Unit>

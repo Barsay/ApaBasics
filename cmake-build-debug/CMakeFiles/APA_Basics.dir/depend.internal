@@ -11,8 +11,12 @@ CMakeFiles/APA_Basics.dir/Item/item.c.obj
 CMakeFiles/APA_Basics.dir/OnLineConnectivity/OnLineConnectivity.c.obj
  C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.c
  C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.h
+CMakeFiles/APA_Basics.dir/SignalProcessing/spectral.c.obj
+ C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.c
+ C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.h
 CMakeFiles/APA_Basics.dir/main.c.obj
  ../Item/item.h
  C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.h
  C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.h
+ C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.h
  C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/main.c

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "Basic_Algorithms/Basic_Algorithms.h"
 #include "OnLineConnectivity/OnLineConnectivity.h"
+#include "SignalProcessing/spectral.h"
 
 //test of the library's functions:
 

@@ -8,15 +8,31 @@
 
 ../Item/item.h
 
-C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.c
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.h
+item.h
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/item.h
+
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.h
+
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.c
+spectral.h
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.h
+math.h
+-
+
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.h
+math.h
+-
+
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/main.c
 stdio.h
 -
 stdlib.h
 -
-Basic_Algorithms.h
+Basic_Algorithms/Basic_Algorithms.h
 C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.h
-
-C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/Basic_Algorithms.h
-item.h
-C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/Basic_Algorithms/item.h
+OnLineConnectivity/OnLineConnectivity.h
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/OnLineConnectivity/OnLineConnectivity.h
+SignalProcessing/spectral.h
+C:/Users/Thoma/CLionProjects/APA_Basics/ApaBasics/SignalProcessing/spectral.h
 
