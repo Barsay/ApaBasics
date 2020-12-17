@@ -32,6 +32,9 @@ main.c contains simple tests for every function.
 - Quick-union
 - Weighted Quick-Union
 
+### Signal Processing
+- DFT
+
 
 
 
